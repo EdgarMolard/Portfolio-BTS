@@ -8,10 +8,80 @@
     <link rel="stylesheet" href="./src/output.css">
 
 </head>
-    <body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        <h1 class="text-3xl font-bold underline">Edgar Molard</h1>
-        <h3 class="text-xl">Etudiant en informatique</h3>
-        <p class="text-base">Bienvenue sur mon portfolio de BTS SIO !</p>
-        <a class="text-blue-500 hover:underline" href="#">Commencer</a>
+    <body id="body" class="min-h-screen transition-all duration-500 dark-theme">
+
+        <header id="header" class="w-full py-6 px-8 transition-all duration-300 header-dark header-light">
+            <!-- Menu de navigation avec des textes clicable avec des ancres qui meneront au section du site voulu -->
+            <nav class="flex justify-between items-center">
+                <ul class="flex justify-center space-x-8 text-lg flex-grow">
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#about">Accueil</a></li>
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#projects">A propos</a></li>
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#contact">Parcours</a></li>
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#projet">Projet</a></li>
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#veille">Veille Technologique</a></li>
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#epreuve">Epreuve E4</a></li>
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#contact">Me contacter</a></li>
+                </ul>
+                <!-- Bouton de changement de thème -->
+                <button id="themeToggle" class="ml-8 p-2 rounded-full bg-green-700 hover:bg-green-600 theme-toggle-light text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-400" title="Changer de thème">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path id="sunIcon" class="hidden" d="M10 2L13.09 8.26L20 9L14 14.74L15.18 21.02L10 17.77L4.82 21.02L6 14.74L0 9L6.91 8.26L10 2Z"/>
+                        <path id="moonIcon" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="flex md:justify-center items-center pt-32 pl-16">
+
+                <div>
+
+                    <h1 id="mainTitle" class="text-5xl font-bold mb-4 transition-colors duration-300 text-theme">Edgar Molard</h1>
+                    <h3 id="subtitle" class="text-2xl mb-6 transition-colors duration-300 text-theme">Etudiant en informatique</h3>
+                    <p id="description" class="text-lg mb-8 max-w-2xl transition-colors duration-300 text-theme">Bienvenue sur mon portfolio de BTS SIO !</p>
+                    <a id="ctaButton" class="text-xl hover:text-green-400 hover:underline font-semibold bg-green-700 hover:bg-green-600 px-6 py-3 rounded-lg transition-all duration-300 cta-button-dark cta-button-light" href="#">Commencer</a>
+                
+                </div>
+
+                <div>
+<div class="max-w-4xl flex flex-col flex-none justify-center items-center animate-[fade-slide-in-top_0.8s_ease-in-out_forwards] my-24 mr-5 px-24 ">
+          <div class="relative w-full max-w-2xl mx-auto border-amber-50 border-1 rounded-2xl">
+            <!-- couche décorative arrière (rotated gradient) -->
+            <div class="animate-[swing_5s_ease-in-out_forwards] absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-[#0b2a4a]/60 to-[#10203a]/40" style="transform: rotate(-10deg); "></div>
+
+            <!-- carte "code" -->
+            <div class="relative bg-[#0b1119]/90 border border-white/10 rounded-2xl p-8 shadow-2xl overflow-hidden">
+              <!-- faux "window controls" -->
+              <div class="flex items-center justify-end mb-4">
+                <div class="text-sm text-white/40">presentation.cpp</div>
+              </div>
+
+              <!-- contenu code-like (modifiable) -->
+              <pre class="font-mono text-sm text-amber-100 leading-6">
+<span class="text-[#61a76b]">// Dévelopeur Junior</span>
+<span class="text-[#6193d3]">int</span> main <span class="text-yellow-400">() {</span>
+    <span class="text-[#ffffff]">Personne</span> <span class="text-[#17e6e6]">edgarMolard</span> = <span class="text-purple-400">{</span>
+    <span class="text-[#e69976]">"Molard"</span><span class="text-[#ffffff]">,</span> <span class="text-[#61a76b]">// nom</span>
+    <span class="text-[#e69976]">"Edgar"</span><span class="text-[#ffffff]">,</span> <span class="text-[#61a76b]">// prenom</span>
+    <span class="text-[#0c50c7]">{ </span><span class="text-[#e69976]">"Python"</span><span class="text-[#ffffff]">,</span> <span class="text-[#e69976]">"PHP"</span><span class="text-[#ffffff]">,</span><span class="text-[#e69976]">"Javascript"</span><span class="text-[#0c50c7]"> }</span><span class="text-[#ffffff]">,</span><span class="text-[#61a76b]"> // compétences</span>
+    <span class="text-[#e69976]">"Motivé"</span> <span class="text-[#61a76b]">// mindset</span> 
+    <span class="text-purple-400">}</span>;
+    <span class="text-purple-400">return </span><span class="text-[#88d19b]">0</span>;
+<span class="text-yellow-400">}</span>
+
+              </pre>
+            </div>
+          </div>
+        </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <script src="./script/theme.js"></script>
+
     </body>
 </html>

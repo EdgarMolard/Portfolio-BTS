@@ -1,2 +1,55 @@
 /* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
 @import "tailwindcss";
+
+/* Styles personnalisés pour le système de thème */
+@layer components {
+    /* Thème sombre (vert/noir) */
+    .dark-theme .header-dark {
+        @apply bg-black/50;
+    }
+    
+    .dark-theme .nav-link-dark {
+        @apply text-white;
+    }
+    
+    .dark-theme .nav-link-dark:hover {
+        @apply bg-green-800/30;
+    }
+    
+    .dark-theme .text-theme {
+        @apply text-white;
+    }
+    
+    .dark-theme .cta-button-dark {
+        @apply text-white;
+    }
+    
+    /* Thème clair (vert/blanc) */
+    .light-theme .header-light {
+        @apply bg-white/90 shadow-lg;
+    }
+    
+    .light-theme .nav-link-light {
+        @apply text-green-800 font-semibold;
+    }
+    
+    .light-theme .nav-link-light:hover {
+        @apply bg-green-200/60;
+    }
+    
+    .light-theme .text-theme {
+        @apply text-black;
+    }
+    
+    .light-theme .cta-button-light {
+        @apply text-white;
+    }
+    
+    .light-theme .theme-toggle-light {
+        @apply bg-green-800;
+    }
+    
+    .light-theme .theme-toggle-light:hover {
+        @apply bg-green-700;
+    }
+}
