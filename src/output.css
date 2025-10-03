@@ -196,6 +196,9 @@
   }
 }
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
   .absolute {
     position: absolute;
   }
@@ -292,6 +295,9 @@
   .animate-\[swing_5s_ease-in-out_forwards\] {
     animation: swing 5s ease-in-out forwards;
   }
+  .resize {
+    resize: both;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -381,8 +387,23 @@
     --tw-gradient-position: to top right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\.\.\/img\/foretdehaut\.jpg\'\)\] {
+    background-image: url('../img/foretdehaut.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/foretlac\.jpg\'\)\] {
+    background-image: url('../img/foretlac.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/lavande\.jpg\'\)\] {
+    background-image: url('../img/lavande.jpg');
+  }
   .bg-\[url\(\'\.\.\/img\/montagnegrise\.jpg\'\)\] {
     background-image: url('../img/montagnegrise.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/montagnesunset\.jpg\'\)\] {
+    background-image: url('../img/montagnesunset.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/sablebleu\.jpg\'\)\] {
+    background-image: url('../img/sablebleu.jpg');
   }
   .from-\[\#0b2a4a\]\/60 {
     --tw-gradient-from: color-mix(in oklab, #0b2a4a 60%, transparent);
@@ -632,20 +653,31 @@
       }
     }
   }
-  .dark\:from-green-800 {
-    @media (prefers-color-scheme: dark) {
-      --tw-gradient-from: var(--color-green-800);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-  }
-  .dark\:to-black {
-    @media (prefers-color-scheme: dark) {
-      --tw-gradient-to: var(--color-black);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-  }
 }
 @layer components {
+  .parallax-container {
+    overflow: hidden;
+  }
+  .parallax-element {
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+  .parallax-bg {
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+  }
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .parallax-element, .parallax-bg {
+      transform: none !important;
+      will-change: auto !important;
+    }
+  }
   .dark-theme .header-dark {
     background-color: color-mix(in srgb, #000 90%, transparent);
     @supports (color: color-mix(in lab, red, red)) {

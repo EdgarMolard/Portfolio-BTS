@@ -77,9 +77,9 @@
             </section>
 
             <!-- Section A propos -->
-            <section id="about" class="min-h-screen relative">
+            <section id="about" class="min-h-screen relative parallax-container">
                 <!-- Image de fond pour cette section -->
-                <div class="absolute inset-0 bg-[url('../img/montagnegrise.jpg')] bg-cover bg-center bg-no-repeat"></div>
+                <div class="absolute inset-0 bg-[url('../img/montagnegrise.jpg')] bg-cover bg-center bg-no-repeat parallax-bg"></div>
                 <!-- Overlay optionnel pour améliorer la lisibilité -->
                 <div class="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
                 <div class="relative z-10 flex flex-col md:justify-center items-center pt-32 pl-16">
@@ -104,7 +104,9 @@
             </section>
 
             <!-- Section Parcours -->
-            <section id="parcours" class="min-h-screen relative">
+            <section id="parcours" class="min-h-screen relative parallax-container">
+                <!-- Image de fond pour cette section -->
+                <div class="absolute inset-0 bg-[url('../img/foretdehaut.jpg')] bg-cover bg-center bg-no-repeat parallax-bg"></div>
                 <!-- Overlay simple comme la section À propos -->
                 <div class="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
                 <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
@@ -116,13 +118,23 @@
             </section>
 
             <!-- Section Projets -->
-                        <!-- Section Projets -->
-            <section id="project" class="min-h-screen relative">
+            <section id="project" class="min-h-screen relative parallax-container">
+                <!-- Image de fond pour cette section -->
+                <div class="absolute inset-0 bg-[url('../img/foretlac.jpg')] bg-cover bg-center bg-no-repeat parallax-bg"></div>
                 <!-- Overlay simple comme la section À propos -->
                 <div class="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
+                    <h1 class="text-4xl font-bold mb-16 transition-colors duration-300 text-theme">Mes Projets</h1>
+                    <div class="max-w-4xl">
+                        <p class="text-lg mb-8 transition-colors duration-300 text-theme">Contenu de la section Projets à venir...</p>
+                    </div>
+                </div>
+            </section>
 
             <!-- Section Veille Technologique -->
-            <section id="veille" class="min-h-screen relative">
+            <section id="veille" class="min-h-screen relative parallax-container">
+                <!-- Image de fond pour cette section -->
+                <div class="absolute inset-0 bg-[url('../img/lavande.jpg')] bg-cover bg-center bg-no-repeat parallax-bg"></div>
                 <!-- Overlay simple comme la section À propos -->
                 <div class="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
                 <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
@@ -134,7 +146,9 @@
             </section>
 
             <!-- Section Epreuve E4 -->
-            <section id="epreuve" class="min-h-screen relative">
+            <section id="epreuve" class="min-h-screen relative parallax-container">
+                <!-- Image de fond pour cette section -->
+                <div class="absolute inset-0 bg-[url('../img/montagnesunset.jpg')] bg-cover bg-center bg-no-repeat parallax-bg"></div>
                 <!-- Overlay simple comme la section À propos -->
                 <div class="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
                 <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
@@ -146,7 +160,9 @@
             </section>
 
             <!-- Section Contact -->
-            <section id="contact" class="min-h-screen relative">
+            <section id="contact" class="min-h-screen relative parallax-container">
+                <!-- Image de fond pour cette section -->
+                <div class="absolute inset-0 bg-[url('../img/sablebleu.jpg')] bg-cover bg-center bg-no-repeat parallax-bg"></div>
                 <!-- Overlay simple comme la section À propos -->
                 <div class="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
                 <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
@@ -160,6 +176,7 @@
         </main>
 
         <script src="./script/theme.js"></script>
+        <script src="./script/parallax.js"></script>
 
     </body>
 </html>

@@ -3,6 +3,39 @@
 
 /* Styles personnalisés pour le système de thème */
 @layer components {
+    
+    /* Styles pour l'effet de parallaxe */
+    .parallax-container {
+        @apply overflow-hidden;
+    }
+    
+    .parallax-element {
+        @apply will-change-transform;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+    }
+    
+    /* Optimisations pour les images de fond avec parallaxe */
+    .parallax-bg {
+        @apply will-change-transform;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transform-style: preserve-3d;
+    }
+    
+    /* Améliorer les performances de scroll */
+    .smooth-scroll {
+        scroll-behavior: smooth;
+    }
+    
+    /* Réduire les animations sur les appareils qui le demandent */
+    @media (prefers-reduced-motion: reduce) {
+        .parallax-element,
+        .parallax-bg {
+            transform: none !important;
+            will-change: auto !important;
+        }
+    }
     /* Thème sombre (vert/noir) */
     .dark-theme .header-dark {
         @apply bg-black/90;
