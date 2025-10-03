@@ -34,11 +34,11 @@ class ThemeManager {
 
     applyTheme(theme) {
         if (theme === 'dark') {
-            this.body.className = 'min-h-screen transition-all duration-500 dark-theme bg-gradient-to-br from-green-800 to-black';
+            this.body.className = 'transition-all duration-500 dark-theme bg-gradient-to-br from-green-800 to-black';
             this.sunIcon.classList.remove('hidden');
             this.moonIcon.classList.add('hidden');
         } else {
-            this.body.className = 'min-h-screen transition-all duration-500 light-theme bg-gradient-to-br from-green-800 to-white';
+            this.body.className = 'transition-all duration-500 light-theme bg-gradient-to-br from-green-800 to-white';
             this.sunIcon.classList.add('hidden');
             this.moonIcon.classList.remove('hidden');
         }

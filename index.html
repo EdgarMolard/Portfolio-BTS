@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./src/output.css">
 
 </head>
-    <body id="body" class="min-h-screen transition-all duration-500 dark-theme">
+    <body id="body" class="transition-all duration-500 dark-theme bg-gradient-to-br from-green-800 to-black">
 
-        <header id="header" class="w-full py-6 px-8 transition-all duration-300 header-dark header-light">
+        <header id="header" class="w-full py-6 px-8 transition-all duration-300 header-dark header-light fixed top-0 left-0 right-0 z-50">
             <!-- Menu de navigation avec des textes clicable avec des ancres qui meneront au section du site voulu -->
             <nav class="flex justify-between items-center">
                 <ul class="flex justify-center space-x-8 text-lg flex-grow">
-                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#about">Accueil</a></li>
-                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#projects">A propos</a></li>
-                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#contact">Parcours</a></li>
-                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#projet">Projet</a></li>
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#accueil">Accueil</a></li>
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#about">A propos</a></li>
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#parcours">Parcours</a></li>
+                    <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#project">Projet</a></li>
                     <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#veille">Veille Technologique</a></li>
                     <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#epreuve">Epreuve E4</a></li>
                     <li><a class="nav-link-dark nav-link-light hover:text-green-400 transition-colors duration-300 px-3 py-2 rounded-md" href="#contact">Me contacter</a></li>
@@ -33,33 +33,31 @@
         </header>
 
         <main>
+            <!-- Section Accueil -->
+            <section id="accueil" class="min-h-screen relative">
+                <div class="flex md:justify-center items-center pt-32 pl-16">
+                    <div>
+                        <h1 id="mainTitle" class="text-5xl font-bold mb-4 transition-colors duration-300 text-theme">Edgar Molard</h1>
+                        <h3 id="subtitle" class="text-2xl mb-6 transition-colors duration-300 text-theme">Etudiant en informatique</h3>
+                        <p id="description" class="text-lg mb-8 max-w-2xl transition-colors duration-300 text-theme">Bienvenue sur mon portfolio de BTS SIO !</p>
+                        <a id="ctaButton" class="text-xl hover:text-green-400 hover:underline font-semibold bg-green-700 hover:bg-green-600 px-6 py-3 rounded-lg transition-all duration-300 cta-button-dark cta-button-light" href="#about">Commencer</a>
+                    </div>
 
-            <div class="flex md:justify-center items-center pt-32 pl-16">
+                    <div>
+                        <div class="max-w-4xl flex flex-col flex-none justify-center items-center animate-[fade-slide-in-top_0.8s_ease-in-out_forwards] my-24 mr-5 px-24 ">
+                            <div class="relative w-full max-w-2xl mx-auto border-amber-50 border-1 rounded-2xl">
+                                <!-- couche décorative arrière (rotated gradient) -->
+                                <div class="animate-[swing_5s_ease-in-out_forwards] absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-[#0b2a4a]/60 to-[#10203a]/40" style="transform: rotate(-10deg); "></div>
 
-                <div>
+                                <!-- carte "code" -->
+                                <div class="relative bg-[#0b1119]/90 border border-white/10 rounded-2xl p-8 shadow-2xl overflow-hidden">
+                                    <!-- faux "window controls" -->
+                                    <div class="flex items-center justify-end mb-4">
+                                        <div class="text-sm text-white/40">presentation.cpp</div>
+                                    </div>
 
-                    <h1 id="mainTitle" class="text-5xl font-bold mb-4 transition-colors duration-300 text-theme">Edgar Molard</h1>
-                    <h3 id="subtitle" class="text-2xl mb-6 transition-colors duration-300 text-theme">Etudiant en informatique</h3>
-                    <p id="description" class="text-lg mb-8 max-w-2xl transition-colors duration-300 text-theme">Bienvenue sur mon portfolio de BTS SIO !</p>
-                    <a id="ctaButton" class="text-xl hover:text-green-400 hover:underline font-semibold bg-green-700 hover:bg-green-600 px-6 py-3 rounded-lg transition-all duration-300 cta-button-dark cta-button-light" href="#">Commencer</a>
-                
-                </div>
-
-                <div>
-<div class="max-w-4xl flex flex-col flex-none justify-center items-center animate-[fade-slide-in-top_0.8s_ease-in-out_forwards] my-24 mr-5 px-24 ">
-          <div class="relative w-full max-w-2xl mx-auto border-amber-50 border-1 rounded-2xl">
-            <!-- couche décorative arrière (rotated gradient) -->
-            <div class="animate-[swing_5s_ease-in-out_forwards] absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-[#0b2a4a]/60 to-[#10203a]/40" style="transform: rotate(-10deg); "></div>
-
-            <!-- carte "code" -->
-            <div class="relative bg-[#0b1119]/90 border border-white/10 rounded-2xl p-8 shadow-2xl overflow-hidden">
-              <!-- faux "window controls" -->
-              <div class="flex items-center justify-end mb-4">
-                <div class="text-sm text-white/40">presentation.cpp</div>
-              </div>
-
-              <!-- contenu code-like (modifiable) -->
-              <pre class="font-mono text-sm text-amber-100 leading-6">
+                                    <!-- contenu code-like (modifiable) -->
+                                    <pre class="font-mono text-sm text-amber-100 leading-6">
 <span class="text-[#61a76b]">// Dévelopeur Junior</span>
 <span class="text-[#6193d3]">int</span> main <span class="text-yellow-400">() {</span>
     <span class="text-[#ffffff]">Personne</span> <span class="text-[#17e6e6]">edgarMolard</span> = <span class="text-purple-400">{</span>
@@ -70,14 +68,98 @@
     <span class="text-purple-400">}</span>;
     <span class="text-purple-400">return </span><span class="text-[#88d19b]">0</span>;
 <span class="text-yellow-400">}</span>
-
-              </pre>
-            </div>
-          </div>
-        </div>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-            </div>
+            <!-- Section A propos -->
+            <section id="about" class="min-h-screen relative">
+                <!-- Overlay pour changer l'arrière-plan de cette section -->
+                <div class="absolute inset-0 bg-gradient-to-bl from-blue-900/20 to-purple-900/20 dark:from-blue-900/40 dark:to-purple-900/40"></div>
+                <div class="relative z-10 flex flex-col md:justify-center items-center pt-32 pl-16">
+                    <div class="w-full">
+                        <h1 class="text-4xl font-bold mb-4 transition-colors duration-300 text-theme">A propos</h1>
+                    </div>
+                    <div class="max-w-4xl mx-auto my-32 px-8 flex flex-col">
+                        <h3 class="text-2xl mb-6 transition-colors duration-300 text-theme">Présentation</h3>
+                        <div class="bg-white/10 dark:bg-black/20 backdrop-blur-sm border border-green-400/30 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                            <p class="text-lg leading-relaxed transition-colors duration-300 text-theme">
+                                Bonjour, moi c'est Edgar Molard <br> 
+                                Au moment où j'écris cette balise, j'ai 18 ans et je suis en 2ème année de BTS SIO option SLAM <br> 
+                                ( Solutions Logicielles Aux Organisations ) dans le lycée Turgot à Paris. <br><br> 
+                                J'envisage de poursuivre mes études en licence. <br> 
+                                Jusqu'à présent mes études m'ont permis de développer ma logique et mes compétences de développement Web front-end et back-end. <br> 
+                                Dans le futur, j'aimerais me tourner vers le développement logiciel. <br><br>
+                                Enfin, je vous souhaite la bienvenue sur mon portfolio !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Parcours -->
+            <section id="parcours" class="min-h-screen relative">
+                <!-- Overlay pour changer l'arrière-plan de cette section -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-purple-900/20 to-indigo-900/20 dark:from-purple-900/40 dark:to-indigo-900/40"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
+                    <h1 class="text-4xl font-bold mb-16 transition-colors duration-300 text-theme">Mon Parcours</h1>
+                    <div class="max-w-4xl">
+                        <p class="text-lg mb-8 transition-colors duration-300 text-theme">Contenu de la section Parcours à venir...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Projets -->
+            <section id="project" class="min-h-screen relative">
+                <!-- Overlay pour changer l'arrière-plan de cette section -->
+                <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 to-cyan-900/20 dark:from-indigo-900/40 dark:to-cyan-900/40"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
+                    <h1 class="text-4xl font-bold mb-16 transition-colors duration-300 text-theme">Mes Projets</h1>
+                    <div class="max-w-4xl">
+                        <p class="text-lg mb-8 transition-colors duration-300 text-theme">Contenu de la section Projets à venir...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Veille Technologique -->
+            <section id="veille" class="min-h-screen relative">
+                <!-- Overlay pour changer l'arrière-plan de cette section -->
+                <div class="absolute inset-0 bg-gradient-to-bl from-teal-900/20 to-emerald-900/20 dark:from-teal-900/40 dark:to-emerald-900/40"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
+                    <h1 class="text-4xl font-bold mb-16 transition-colors duration-300 text-theme">Veille Technologique</h1>
+                    <div class="max-w-4xl">
+                        <p class="text-lg mb-8 transition-colors duration-300 text-theme">Contenu de la section Veille à venir...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Epreuve E4 -->
+            <section id="epreuve" class="min-h-screen relative">
+                <!-- Overlay pour changer l'arrière-plan de cette section -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-cyan-900/20 to-slate-900/20 dark:from-cyan-900/40 dark:to-slate-900/40"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
+                    <h1 class="text-4xl font-bold mb-16 transition-colors duration-300 text-theme">Épreuve E4</h1>
+                    <div class="max-w-4xl">
+                        <p class="text-lg mb-8 transition-colors duration-300 text-theme">Contenu de la section Épreuve E4 à venir...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Contact -->
+            <section id="contact" class="min-h-screen relative">
+                <!-- Overlay pour changer l'arrière-plan de cette section -->
+                <div class="absolute inset-0 bg-gradient-to-bl from-emerald-900/20 to-green-900/30 dark:from-emerald-900/40 dark:to-green-900/50"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
+                    <h1 class="text-4xl font-bold mb-16 transition-colors duration-300 text-theme">Me Contacter</h1>
+                    <div class="max-w-4xl">
+                        <p class="text-lg mb-8 transition-colors duration-300 text-theme">Contenu de la section Contact à venir...</p>
+                    </div>
+                </div>
+            </section>
 
         </main>
 

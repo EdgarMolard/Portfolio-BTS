@@ -5,7 +5,7 @@
 @layer components {
     /* Thème sombre (vert/noir) */
     .dark-theme .header-dark {
-        @apply bg-black/50;
+        @apply bg-black/90;
     }
     
     .dark-theme .nav-link-dark {
@@ -26,7 +26,7 @@
     
     /* Thème clair (vert/blanc) */
     .light-theme .header-light {
-        @apply bg-white/90 shadow-lg;
+        @apply bg-white/95 shadow-lg;
     }
     
     .light-theme .nav-link-light {
