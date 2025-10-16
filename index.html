@@ -96,7 +96,7 @@
                         <div class="bg-white/10 dark:bg-black/20 backdrop-blur-sm border border-green-400/30 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                             <p class="text-lg leading-relaxed transition-colors duration-300 text-white">
                                 Bonjour, moi c'est Edgar Molard <br> 
-                                Au moment où j'écris cette balise, j'ai 18 ans et je suis en 2ème année de BTS SIO option SLAM <br> 
+                                Au moment où j'écris cette balise, j'ai 19 ans et je suis en 2ème année de BTS SIO option SLAM <br> 
                                 ( Solutions Logicielles Aux Organisations ) dans le lycée Turgot à Paris. <br><br> 
                                 J'envisage de poursuivre mes études en licence. <br> 
                                 Jusqu'à présent mes études m'ont permis de développer ma logique et mes compétences de développement Web front-end et back-end. <br> 
@@ -114,10 +114,97 @@
                 <div class="transition-all duration-500 dark-theme bg-gradient-to-br from-green-800 to-black bg-cover bg-center bg-no-repeat parallax-bg"></div>
                 <!-- Overlay simple comme la section À propos -->
                 <div class="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
-                <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
-                    <h1 class="text-4xl font-bold mb-16 transition-colors duration-300 text-theme">Mon Parcours</h1>
-                    <div class="max-w-4xl">
-                        <p class="text-lg mb-8 transition-colors duration-300 text-theme">Contenu de la section Parcours à venir...</p>
+                <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16 pb-20">
+                    <h1 class="text-4xl font-bold mb-16 transition-colors duration-300 text-theme">Compétences</h1>
+                    
+                    <!-- Conteneur du graphique de compétences -->
+                    <div class="max-w-6xl w-full px-8">
+                        <p class="text-center text-lg mb-12 transition-colors duration-300 text-theme">
+                            Voici les technologies et langages que je manipule, positionnés selon mon niveau de maitrise
+                        </p>
+                        
+                        <!-- Graphique avec flèche et bulles -->
+                        <div class="relative w-full h-96 mt-16">
+                            
+                            <!-- Flèche horizontale en bas -->
+                            <div class="absolute bottom-8 left-8 right-8 flex items-center">
+                                <!-- Ligne de la flèche -->
+                                <div class="flex-grow h-1 bg-gradient-to-r from-green-600 to-green-400 rounded"></div>
+                                <!-- Pointe de la flèche -->
+                                <div class="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-l-[20px] border-l-green-400"></div>
+                            </div>
+                            
+                            <!-- Labels de niveau -->
+                            <div class="absolute bottom-0 left-8 right-8 flex justify-between text-sm text-theme opacity-70">
+                                <span>Débutant</span>
+                                <span>Intermédiaire</span>
+                                <span class="pr-6">Connaissance solide</span>
+                            </div>
+                            
+                            <!-- Bulles de compétences -->
+                            <!-- Chaque bulle est positionnée avec left-[X%] selon le niveau de maîtrise -->
+                            
+                            <!-- Niveau Débutant/Intermédiaire (20-40%) -->
+                            <div class="skill-bubble absolute bottom-20 left-[22%] transform -translate-x-1/2" data-skill="csharp">
+                                <div class="skill-content bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-400 hover:to-blue-600 text-white px-6 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-blue-300 hover:scale-110">
+                                    <span class="font-semibold text-lg">C#</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bubble absolute bottom-44 left-[40%] transform -translate-x-1/2" data-skill="aws">
+                                <div class="skill-content bg-gradient-to-br from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-6 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-orange-300 hover:scale-110">
+                                    <span class="font-semibold text-lg">Cloud AWS</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bubble absolute bottom-24 left-[40%] transform -translate-x-1/2" data-skill="cpp">
+                                <div class="skill-content bg-gradient-to-br from-purple-500 to-purple-700 hover:from-purple-400 hover:to-purple-600 text-white px-6 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-purple-300 hover:scale-110">
+                                    <span class="font-semibold text-lg">C++</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Niveau Intermédiaire (50-65%) -->
+                            <div class="skill-bubble absolute bottom-48 left-[65%] transform -translate-x-1/2" data-skill="js">
+                                <div class="skill-content bg-gradient-to-br from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-6 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-cyan-300 hover:scale-110">
+                                    <span class="font-semibold text-lg">Javascript/Angular</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bubble absolute bottom-24 left-[55%] transform -translate-x-1/2" data-skill="linux">
+                                <div class="skill-content bg-gradient-to-br from-orange-600 to-orange-800 hover:from-orange-500 hover:to-orange-700 text-white px-6 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-orange-300 hover:scale-110">
+                                    <span class="font-semibold text-lg">Linux/Bash</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Niveau Avancé (70-85%) -->
+
+                            <div class="skill-bubble absolute bottom-48 left-[77%] transform -translate-x-1/2" data-skill="Python">
+                                <div class="skill-content bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-400 hover:to-blue-600 text-white px-6 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-blue-300 hover:scale-110">
+                                    <span class="font-semibold text-lg">Python</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-bubble absolute bottom-24 left-[80%] transform -translate-x-1/2" data-skill="SQL">
+                                <div class="skill-content bg-gradient-to-br from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-white px-6 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-yellow-300 hover:scale-110">
+                                    <span class="font-semibold text-lg">PSQL/MySQL</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Niveau Expert (88-92%) -->
+
+                            <div class="skill-bubble absolute bottom-54 left-[90%] transform -translate-x-1/2" data-skill="Git">
+                                <div class="skill-content bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-500 hover:to-purple-600 text-white px-6 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-indigo-300 hover:scale-110">
+                                    <span class="font-semibold text-lg">Git/Github</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-bubble absolute bottom-24 left-[97%] transform -translate-x-1/2" data-skill="PHP">
+                                <div class="skill-content bg-gradient-to-br from-blue-600 to-yellow-500 hover:from-blue-500 hover:to-yellow-400 text-white px-6 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-blue-300 hover:scale-110">
+                                    <span class="font-semibold text-lg">PHP</span>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
@@ -182,6 +269,7 @@
 
         <script src="./script/theme.js"></script>
         <script src="./script/parallax.js"></script>
+        <script src="./script/skills.js"></script>
 
     </body>
 </html>

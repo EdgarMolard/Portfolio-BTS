@@ -36,6 +36,78 @@
             will-change: auto !important;
         }
     }
+    
+    /* Styles pour les bulles de compétences */
+    .skill-bubble {
+        animation: fadeInUp 0.6s ease-out forwards;
+        opacity: 0;
+    }
+    
+    .skill-bubble:nth-child(3) { animation-delay: 0.1s; }
+    .skill-bubble:nth-child(4) { animation-delay: 0.2s; }
+    .skill-bubble:nth-child(5) { animation-delay: 0.3s; }
+    .skill-bubble:nth-child(6) { animation-delay: 0.4s; }
+    .skill-bubble:nth-child(7) { animation-delay: 0.5s; }
+    .skill-bubble:nth-child(8) { animation-delay: 0.6s; }
+    .skill-bubble:nth-child(9) { animation-delay: 0.7s; }
+    .skill-bubble:nth-child(10) { animation-delay: 0.8s; }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px) translateX(-50%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) translateX(-50%);
+        }
+    }
+    
+    /* Effet de pulsation subtile sur les bulles */
+    .skill-content {
+        animation: pulse 3s ease-in-out infinite;
+        position: relative;
+    }
+    
+    @keyframes pulse {
+        0%, 100% {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        50% {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+    }
+    
+    /* Effet de brillance au survol */
+    .skill-content::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        border-radius: 9999px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: -1;
+    }
+    
+    .skill-content:hover::before {
+        opacity: 1;
+    }
+    
+    /* Responsive pour mobile */
+    @media (max-width: 768px) {
+        .skill-bubble {
+            font-size: 0.875rem;
+        }
+        
+        .skill-content {
+            @apply px-4 py-3;
+        }
+    }
+    
     /* Thème sombre (vert/noir) */
     .dark-theme .header-dark {
         @apply bg-black/90;
