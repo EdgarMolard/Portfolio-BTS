@@ -1149,16 +1149,8 @@
     }
   }
   .skill-content {
-    animation: pulse 3s ease-in-out infinite;
     position: relative;
-  }
-  @keyframes pulse {
-    0%, 100% {
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    }
-    50% {
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    }
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   }
   .skill-content::before {
     content: '';
@@ -1461,11 +1453,6 @@
   75%, 100% {
     transform: scale(2);
     opacity: 0;
-  }
-}
-@keyframes pulse {
-  50% {
-    opacity: 0.5;
   }
 }
 @layer properties {

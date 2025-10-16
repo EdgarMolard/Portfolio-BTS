@@ -63,19 +63,10 @@
         }
     }
     
-    /* Effet de pulsation subtile sur les bulles */
+    /* Style de base pour les bulles */
     .skill-content {
-        animation: pulse 3s ease-in-out infinite;
         position: relative;
-    }
-    
-    @keyframes pulse {
-        0%, 100% {
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-        }
-        50% {
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-        }
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
     
     /* Effet de brillance au survol */
