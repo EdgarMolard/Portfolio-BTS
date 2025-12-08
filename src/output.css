@@ -708,20 +708,8 @@
       border-color: color-mix(in oklab, var(--color-orange-400) 40%, transparent);
     }
   }
-  .border-pink-400\/40 {
-    border-color: color-mix(in srgb, oklch(71.8% 0.202 349.761) 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-pink-400) 40%, transparent);
-    }
-  }
   .border-purple-300 {
     border-color: var(--color-purple-300);
-  }
-  .border-purple-400\/40 {
-    border-color: color-mix(in srgb, oklch(71.4% 0.203 305.504) 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-purple-400) 40%, transparent);
-    }
   }
   .border-white\/10 {
     border-color: color-mix(in srgb, #fff 10%, transparent);
@@ -838,30 +826,6 @@
     background-color: color-mix(in srgb, oklch(70.5% 0.213 47.604) 30%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-orange-500) 30%, transparent);
-    }
-  }
-  .bg-pink-500\/20 {
-    background-color: color-mix(in srgb, oklch(65.6% 0.241 354.308) 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-pink-500) 20%, transparent);
-    }
-  }
-  .bg-pink-500\/30 {
-    background-color: color-mix(in srgb, oklch(65.6% 0.241 354.308) 30%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-pink-500) 30%, transparent);
-    }
-  }
-  .bg-purple-500\/20 {
-    background-color: color-mix(in srgb, oklch(62.7% 0.265 303.9) 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-purple-500) 20%, transparent);
-    }
-  }
-  .bg-purple-500\/30 {
-    background-color: color-mix(in srgb, oklch(62.7% 0.265 303.9) 30%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-purple-500) 30%, transparent);
     }
   }
   .bg-white {
@@ -1223,18 +1187,6 @@
   }
   .text-orange-300 {
     color: var(--color-orange-300);
-  }
-  .text-pink-200 {
-    color: var(--color-pink-200);
-  }
-  .text-pink-300 {
-    color: var(--color-pink-300);
-  }
-  .text-purple-200 {
-    color: var(--color-purple-200);
-  }
-  .text-purple-300 {
-    color: var(--color-purple-300);
   }
   .text-purple-400 {
     color: var(--color-purple-400);
