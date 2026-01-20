@@ -463,10 +463,117 @@
                 <div class="transition-all duration-500 dark-theme bg-gradient-to-br from-green-800 to-black bg-cover bg-center bg-no-repeat parallax-bg"></div>
                 <!-- Overlay simple comme la section À propos -->
                 <div class="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
-                <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16">
+                <div class="relative z-10 flex flex-col items-center justify-center pt-32 px-16 pb-20">
                     <h1 class="text-4xl font-bold mb-16 transition-colors duration-300 text-theme">Veille Technologique</h1>
-                    <div class="max-w-4xl">
-                        <p class="text-lg mb-8 transition-colors duration-300 text-theme">Contenu de la section Veille à venir...</p>
+                    
+                    <!-- Conteneur principal -->
+                    <div class="max-w-6xl w-full space-y-12">
+                        
+                        <!-- Section Sujet -->
+                        <div class="bg-white/10 dark:bg-black/40 backdrop-blur-sm border border-green-400/30 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-lg flex items-center justify-center shadow-lg">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-3xl font-bold text-theme">Sujet</h2>
+                            </div>
+                            <div class="text-theme">
+                                <p class="text-lg leading-relaxed mb-4">
+                                    L'utilisation de l'IA pour la reconnaissance d'image dans le domaine militaire.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Section Contexte -->
+                        <div class="bg-white/10 dark:bg-black/40 backdrop-blur-sm border border-green-400/30 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center shadow-lg">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-3xl font-bold text-theme">Contexte</h2>
+                            </div>
+                            <div class="text-theme">
+                                <p class="text-lg leading-relaxed mb-4">
+                                    L'IA est un enjeux majeur dans une grande quantité de domaines de nos jours, elle a permis des avancées significatives dans la reconnaissance d'images, dont pour l'usage militaire. Cette facette de l'IA est très intéressante avec l'émergence de nouvelles guerres modernes ces dernières années où cette technologie joue un rôle crucial. 
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Section Outils -->
+                        <div class="bg-white/10 dark:bg-black/40 backdrop-blur-sm border border-green-400/30 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-700 rounded-lg flex items-center justify-center shadow-lg">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-3xl font-bold text-theme">Outils</h2>
+                            </div>
+                            <div class="text-theme">
+                                <p class="text-lg leading-relaxed mb-6">
+                                    Outil utilisé pour suivre cette veille technologique :
+                                </p>
+                                
+                                <!-- Outil unique -->
+                                <div class="bg-white/5 border border-orange-400/20 rounded-lg p-4 hover:bg-white/10 transition-all duration-300">
+                                    <h4 class="font-semibold text-lg mb-2 text-orange-400">Perplexity</h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Section Sources -->
+                        <div class="bg-white/10 dark:bg-black/40 backdrop-blur-sm border border-green-400/30 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg flex items-center justify-center shadow-lg">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-3xl font-bold text-theme">Sources</h2>
+                            </div>
+                            <div class="text-theme space-y-4">
+                                <p class="text-lg leading-relaxed mb-6">
+                                    Voici les principales sources utilisées pour cette veille technologique :
+                                </p>
+                                
+                                <!-- Liste des sources -->
+                                <div class="space-y-4">
+                                    <!-- Source 1 -->
+                                    <div class="bg-white/5 border border-green-400/20 rounded-lg p-4 hover:bg-white/10 transition-all duration-300">
+                                        <h4 class="font-semibold text-lg mb-2 text-green-400">Safran s'offre Preligens, une des pépites de l'intelligence artificielle</h4>
+                                        <p class="text-sm opacity-80 mb-2">Date : <span class="text-green-300">02/09/2024</span></p>
+                                        <a href="https://lignesdedefense.ouest-france.fr/safran-soffre-preligens-une-des-pepites-de-lintelligence-artificielle/" target="_blank" class="text-green-400 hover:text-green-300 text-sm underline">Lien vers la source →</a>
+                                    </div>
+                                    
+                                    <!-- Source 2 -->
+                                    <div class="bg-white/5 border border-green-400/20 rounded-lg p-4 hover:bg-white/10 transition-all duration-300">
+                                        <h4 class="font-semibold text-lg mb-2 text-green-400">$100 AI Upgrade Gives Ukrainian FPV Drones Last-Meter Accuracy in Heavy Jamming</h4>
+                                        <p class="text-sm opacity-80 mb-2">Date : <span class="text-green-300">19/11/2025</span></p>
+                                        <a href="https://thedefensepost.com/2025/11/19/ai-upgrade-ukrainian-drones/" target="_blank" class="text-green-400 hover:text-green-300 text-sm underline">Lien vers la source →</a>
+                                    </div>
+                                    
+                                    <!-- Source 3 -->
+                                    <div class="bg-white/5 border border-green-400/20 rounded-lg p-4 hover:bg-white/10 transition-all duration-300">
+                                        <h4 class="font-semibold text-lg mb-2 text-green-400">Renseignement : Le français Preligens dévoile une nouvelle solution d'IA pour l'imagerie satellitaire radar</h4>
+                                        <p class="text-sm opacity-80 mb-2">Date : <span class="text-green-300">07/05/2024</span></p>
+                                        <a href="https://www.opex360.com/2024/05/07/renseignement-le-francais-preligens-devoile-une-nouvelle-solution-dia-pour-limagerie-satellitaire-radar/" target="_blank" class="text-green-400 hover:text-green-300 text-sm underline">Lien vers la source →</a>
+                                    </div>
+                                    
+                                    <!-- Source 4 -->
+                                    <div class="bg-white/5 border border-green-400/20 rounded-lg p-4 hover:bg-white/10 transition-all duration-300">
+                                        <h4 class="font-semibold text-lg mb-2 text-green-400">AI in Defense: The Image Reconnaissance Revolution</h4>
+                                        <p class="text-sm opacity-80 mb-2">Date : <span class="text-green-300">18/03/2025</span></p>
+                                        <a href="https://ttms.com/ai-in-defense-the-image-reconnaissance-revolution/" target="_blank" class="text-green-400 hover:text-green-300 text-sm underline">Lien vers la source →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
